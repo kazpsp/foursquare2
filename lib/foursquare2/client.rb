@@ -79,9 +79,9 @@ module Foursquare2
     def return_error_or_body(response, response_body)
       if response.body.meta.code == 200
         response_body
-      else
+     # else
        # raise Foursquare2::APIError.new(response.body.meta, response.body.response)
-      end
+      #end
     end
 
     private
